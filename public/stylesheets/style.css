@@ -1,11 +1,10 @@
 html {
-  background-color: rgb(110, 195, 235);
+  background-color: rgb(150, 219, 252);
 }
 
 body {
   padding: 50px;
   font-size: 14px;
-
   width: 50%;
   margin: 0 auto;
   color: black;
@@ -80,7 +79,33 @@ button:hover {
   color: white;
 }
 
+.messageBoardDisplay {
+}
+
 .renderedMessage {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.userName {
+  font-size: 20px;
+  padding: 5px 0;
+  font-style: italic;
+}
+
+.messageTitle {
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.messageText {
+  font-size: 18px;
 }

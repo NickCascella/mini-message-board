@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <nav>
+    <ul>
+      <li><a href="/">Message Board</a></li>
+      <li><a href="/new">Create a message</a></li>
+    </ul>
+  </nav>
+  <body>
+    <form method="POST" action="/new">
+      <input
+        type="text"
+        name="user"
+        placeholder="Display Name"
+        maxlength="20"
+        required
+      />
+      <input
+        type="text"
+        name="title"
+        placeholder="Title"
+        maxlength="20"
+        required
+      />
+      <textarea
+        type="text"
+        name="message"
+        placeholder="Message"
+        required
+      ></textarea>
+      <button type="submit">Create</button>
+    </form>
+  </body>
+</html>

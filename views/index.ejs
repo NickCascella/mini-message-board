@@ -2,10 +2,24 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
+  <nav>
+    <ul>
+      <li><a href="/">Message Board</a></li>
+      <li><a href="/new">Create a message</a></li>
+    </ul>
+  </nav>
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <% for(let i = 0; i < messages.length; i++) {%>
+    <div class="renderedMessage">
+      <span class="userName">User: <%= messages[i].user %></span>
+      <span class="dateAdded"><%= messages[i].added %></span>
+      <span class="messageTitle"><b>Title:</b><%= messages[i].title %></span>
+      <span class="messageText"><%= messages[i].text %></span>
+    </div>
+    <% } %>
   </body>
 </html>
